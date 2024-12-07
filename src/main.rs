@@ -43,10 +43,10 @@ fn mean(list: Vec<i32>) -> f64 {
 }
 
 fn main() {
-    let list = vec![59, 37, 7, 23, 23, 43, 41];
+    let list = vec![59, 37, 7, 23, 23, 43, 41, 23];
     let median = median(&list);
     println!("Median: {}", median);
-    assert_eq!(median, 37.0);
+    assert_eq!(median, 30.0);
     let mode = mode(&list);
     println!("Mode: {}", mode);
     assert_eq!(mode, 23);
