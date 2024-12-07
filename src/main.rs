@@ -33,6 +33,7 @@ fn mode(list: &Vec<i32>) -> i32 {
     }
     mode
 }
+
 fn mean(list: Vec<i32>) -> f64 {
     let mut sum = 0;
     let size = list.len();
@@ -50,4 +51,7 @@ fn main() {
     let mode = mode(&list);
     println!("Mode: {}", mode);
     assert_eq!(mode, 23);
+    let mean = mean(list);
+    println!("Mean: {}", mean);
+    assert_eq!(mean, 32.0);
 }
